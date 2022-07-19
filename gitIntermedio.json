@@ -110,7 +110,7 @@
     },
     {
       "subtitle": "",
-      "descripcion": "<p>Tomar nota que efectivamente viajamos al último commit pero git nos recomienda hacer una nueva rama para el commit huerfano.</p><div class='text-center'> <img src='./src/img/checkout-1.JPG' alt='adventencia de rama huerfana' /> </div><p>Todavía no vemos como hacer una rama así que lo dejamos hasta acá por el momento.</p>",
+      "descripcion": "<p>Tomar nota que efectivamente viajamos al último commit pero git nos recomienda hacer una nueva rama para el commit huerfano.</p><div class='text-center'> <img src='./src/img/checkout-1.jpg' alt='adventencia de rama huerfana' /> </div><p>Todavía no vemos como hacer una rama así que lo dejamos hasta acá por el momento.</p>",
       "titleComando": "",
       "subTitleComando": "",
       "descripcionComando": "git checkout master"
