@@ -337,7 +337,7 @@
     "id": "conflictos",
     "title": "Conflictos",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <img src='./src/img/conflicto-2.JPG' alt='conflicto en ramas unidas' /> </div> <p> Puedes utilizar las herramientas de VSCode o bien hacer los cambios manualmente en el archivo. <strong>Lo importante es hacer un nuevo commit al finalizar.</strong> </p>",
+    "descripcion": "<div class='text-center'> <img src='./src/img/conflicto-2.jpg' alt='conflicto en ramas unidas' /> </div> <p> Puedes utilizar las herramientas de VSCode o bien hacer los cambios manualmente en el archivo. <strong>Lo importante es hacer un nuevo commit al finalizar.</strong> </p>",
     "comandos": [
       {
         "subtitle": "",
