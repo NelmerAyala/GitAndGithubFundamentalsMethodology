@@ -23,7 +23,7 @@
     "id": "flujo-de-trabajo-de-git",
     "title": "Flujo de trabajo de GIT",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <br /> <img src='./src/img/caja-git.png' alt='flujo git' width='500px' /> <br /> <br /> <img src='./src/img/git-flujo.png' alt='flujo git' width='500px' /> </div> <div class='custom-block tip'> <p class='custom-block-title'>TIP</p> <p>Tus proyectos vinculados a git serán un repositorio</p> </div> <p> <strong>Tratando de explicar la imagen:</strong> Tenemos nuestro directorio local (una carpeta en nuestro pc) con muchos archivos, Git nos irá registrando los cambios de archivos o códigos cuando nosotros le indiquemos, así podremos viajar en el tiempo retrocediendo cambios o restaurando versiones de código, ya sea en Local o de forma Remota (servidor externo). En la práctica quedará más claro. </p>",
+    "descripcion": "<div class='text-center'> <br /> <img src='./src/img/caja-git.png' alt='flujo git' width='50%' /> <br /> <br /> <img src='./src/img/git-flujo.png' alt='flujo git' width='50%' /> </div> <div class='custom-block tip'> <p class='custom-block-title'>TIP</p> <p>Tus proyectos vinculados a git serán un repositorio</p> </div> <p> <strong>Tratando de explicar la imagen:</strong> Tenemos nuestro directorio local (una carpeta en nuestro pc) con muchos archivos, Git nos irá registrando los cambios de archivos o códigos cuando nosotros le indiquemos, así podremos viajar en el tiempo retrocediendo cambios o restaurando versiones de código, ya sea en Local o de forma Remota (servidor externo). En la práctica quedará más claro. </p>",
     "comandos": []
   },
   {
@@ -107,7 +107,7 @@
       },
       {
         "subtitle": "",
-        "descripcion": "<div class='text-center'> <img src='./src/img/scaner.gif' alt='add archivos git' /> </div>",
+        "descripcion": "<div class='text-center'> <img src='./src/img/scaner.gif' alt='add archivos git' width='50%'/> </div>",
         "titleComando": "",
         "subTitleComando": "",
         "subParrafoComando": "// Crear commit (fotografía del proyecto en ese momento)",
@@ -143,7 +143,7 @@
     "id": "vscode",
     "title": "VSCode",
     "subtitle": "",
-    "descripcion": "<p>Visual Studio Code tiene un apartado de Git, el cual de manera visual podemos trabajar.</p><div class='text-center'> <img src='./src/img/git-vscode.jpg' alt='icono visual studio code git' /> </div>",
+    "descripcion": "<p>Visual Studio Code tiene un apartado de Git, el cual de manera visual podemos trabajar.</p><div class='text-center'> <img src='./src/img/git-vscode.jpg' alt='icono visual studio code git' width='50%'/> </div>",
     "comandos": []
   },
   {
@@ -157,7 +157,7 @@
     "id": "crear-repositorio",
     "title": "Crear repositorio",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <img src='./src/img/repo-github.jpg' alt='icono visual studio code git' /> </div>",
+    "descripcion": "<div class='text-center'> <img src='./src/img/repo-github.jpg' alt='icono visual studio code git' width='50%'/> </div>",
     "comandos": [
     {
       "subtitle": "",
@@ -213,7 +213,7 @@
     "id": "gitpages",
     "title": "Github pages",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <img src='./src/img/github-page.jpg' alt='icono visual studio code git' width='500px' /> </div>",
+    "descripcion": "<div class='text-center'> <img src='./src/img/github-page.jpg' alt='icono visual studio code git' width='50%' /> </div>",
     "comandos": []
   }
 ]

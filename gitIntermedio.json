@@ -16,7 +16,7 @@
     "id": "introduccion",
     "title": "Introducción",
     "subtitle": "",
-    "descripcion": "<ul> <li> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes' target='_blank' rel='noopener noreferrer'>fuente<span class='sr-only'>(opens new window)</span> </a> </li> <li> Una vez que se ha hecho un commit de los cambios, estos suelen volverse permanentes. </li> <li> Utiliza <code>git checkout</code> para desplazarte y revisar el historial de commits. </li> <li> <code>git revert</code> es la mejor herramienta para deshacer cambios públicos compartidos. </li> <li> <code>git reset</code> es más adecuado para deshacer cambios privados locales. </li> </ul><div class='text-center'> <img src='./src/img/reset.png' alt='git merge' width='500px' /> <br /> <a href='https://medium.com/mindorks/use-of-git-reset-git-revert-git-checkout-squash-commit-2b721ca2d2d3' target='_blank' >Fuente imagen</a > </div>",
+    "descripcion": "<ul> <li> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes' target='_blank' rel='noopener noreferrer'>fuente<span class='sr-only'>(opens new window)</span> </a> </li> <li> Una vez que se ha hecho un commit de los cambios, estos suelen volverse permanentes. </li> <li> Utiliza <code>git checkout</code> para desplazarte y revisar el historial de commits. </li> <li> <code>git revert</code> es la mejor herramienta para deshacer cambios públicos compartidos. </li> <li> <code>git reset</code> es más adecuado para deshacer cambios privados locales. </li> </ul><div class='text-center'> <img src='./src/img/reset.png' alt='git merge' width='50%' /> <br /> <a href='https://medium.com/mindorks/use-of-git-reset-git-revert-git-checkout-squash-commit-2b721ca2d2d3' target='_blank' >Fuente imagen</a > </div>",
     "comandos": []
   },
   {
@@ -110,7 +110,7 @@
     },
     {
       "subtitle": "",
-      "descripcion": "<p>Tomar nota que efectivamente viajamos al último commit pero git nos recomienda hacer una nueva rama para el commit huerfano.</p><div class='text-center'> <img src='./src/img/checkout-1.jpg' alt='adventencia de rama huerfana' /> </div><p>Todavía no vemos como hacer una rama así que lo dejamos hasta acá por el momento.</p>",
+      "descripcion": "<p>Tomar nota que efectivamente viajamos al último commit pero git nos recomienda hacer una nueva rama para el commit huerfano.</p><div class='text-center'> <img src='./src/img/checkout-1.jpg' alt='adventencia de rama huerfana' width='50%' /> </div><p>Todavía no vemos como hacer una rama así que lo dejamos hasta acá por el momento.</p>",
       "titleComando": "",
       "subTitleComando": "",
       "descripcionComando": "git checkout master"
@@ -213,7 +213,7 @@
     "id": "git-revert",
     "title": "git revert",
     "subtitle": "",
-    "descripcion": "<p>En su lugar es mejor usar git revert, deshace los cambios realizados por un commit anterior creando un commit completamente nuevo, todo esto sin alterar el historial de commits.<div class='text-center'> <img src='./src/img/revert.svg' alt='revert vs reset' /> <br /> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes/git-revert' target='_blank' >Fuente imagen</a > </div></p>",
+    "descripcion": "<p>En su lugar es mejor usar git revert, deshace los cambios realizados por un commit anterior creando un commit completamente nuevo, todo esto sin alterar el historial de commits.<div class='text-center'> <img src='./src/img/revert.svg' alt='revert vs reset' width='50%' /> <br /> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes/git-revert' target='_blank' >Fuente imagen</a > </div></p>",
     "comandos": [{
       "subtitle": "",
       "descripcion": "Ejemplo:",
@@ -241,7 +241,7 @@
     "id": "ramas-o-branch",
     "title": "Ramas o branch",
     "subtitle": "",
-    "descripcion": "<p>Hasta el momento solo hemos trabajado en la rama 'master' o 'main' pero puede que necesitemos crear diferentes ramas para los seguimientos de git.</p><div class='text-center'> <img src='./src/img/feature.png' alt='git merge' width='500px' /> <br /> <a href='https://zepel.io/blog/how-to-create-a-new-branch-in-github/' target='_blank' >Fuente imagen</a > </div>",
+    "descripcion": "<p>Hasta el momento solo hemos trabajado en la rama 'master' o 'main' pero puede que necesitemos crear diferentes ramas para los seguimientos de git.</p><div class='text-center'> <img src='./src/img/feature.png' alt='git merge' width='50%' /> <br /> <a href='https://zepel.io/blog/how-to-create-a-new-branch-in-github/' target='_blank' >Fuente imagen</a > </div>",
     "comandos": [
     {
       "subtitle": "",
@@ -309,7 +309,7 @@
       },
       {
         "subtitle": "",
-        "descripcion": "<div class='text-center'> <img src='./src/img/git-merge.gif' alt='git merge' width='500px' /> </div>",
+        "descripcion": "<div class='text-center'> <img src='./src/img/git-merge.gif' alt='git merge' width='50%' /> </div>",
         "titleComando": "",
         "subTitleComando": "",
         "subParrafoComando": "",
@@ -337,7 +337,7 @@
     "id": "conflictos",
     "title": "Conflictos",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <img src='./src/img/conflicto-2.jpg' alt='conflicto en ramas unidas' /> </div> <p> Puedes utilizar las herramientas de VSCode o bien hacer los cambios manualmente en el archivo. <strong>Lo importante es hacer un nuevo commit al finalizar.</strong> </p>",
+    "descripcion": "<div class='text-center'> <img src='./src/img/conflicto-2.jpg' alt='conflicto en ramas unidas' width='50%' /> </div> <p> Puedes utilizar las herramientas de VSCode o bien hacer los cambios manualmente en el archivo. <strong>Lo importante es hacer un nuevo commit al finalizar.</strong> </p>",
     "comandos": [
       {
         "subtitle": "",
