@@ -1,0 +1,219 @@
+  [
+    {
+    "id": "queesgit",
+    "title": "¿Qué es Git?",
+    "subtitle": "",
+    "descripcion": "Es un software de control de versiones, su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos (También puedes trabajar solo no hay problema 😃). Existe la posibilidad de trabajar de forma remota y una opción es GitHub.",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "Add confirmaciones.",
+      "subTitleComando": "Git add especifica",
+      "descripcionComando": "Git add ."
+    }]
+  },
+  {
+    "id": "para-que-usar-git",
+    "title": "¿Para qué usar GIT?",
+    "subtitle": "",
+    "descripcion": "<ul><li>Permite regresar a versiones anteriores de forma sencilla y muy rápida.</li> <li>Facilita el trabajo colaborativo.</li> <li>Permite respaldar tus proyectos en la nube (ej con github).</li> <li>Reduce considerablemente los tiempos de deploy.</li> <li> Las 'branches' o ramas, permiten trabajar con una base de código paralela al proyecto en sí. </li> <li> <a href='https://blog.coffeedevs.com/8-razones-para-usar-git/' target='_blank' rel='noopener noreferrer' >Fuente<span ><svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' x='0px' y='0px' viewBox='0 0 100 100' width='15' height='15' class='icon outbound' > <path fill='currentColor' d='M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z' ></path> <polygon fill='currentColor' points='45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9' ></polygon> </svg> <span class='sr-only'>(opens new window)</span></span ></a > </li> </ul>",
+    "comandos": []
+  },
+  {
+    "id": "flujo-de-trabajo-de-git",
+    "title": "Flujo de trabajo de GIT",
+    "subtitle": "",
+    "descripcion": "<div class='text-center'> <br /> <img src='./src/img/caja-git.png' alt='flujo git' width='500px' /> <br /> <br /> <img src='./src/img/git-flujo.png' alt='flujo git' width='500px' /> </div> <div class='custom-block tip'> <p class='custom-block-title'>TIP</p> <p>Tus proyectos vinculados a git serán un repositorio</p> </div> <p> <strong>Tratando de explicar la imagen:</strong> Tenemos nuestro directorio local (una carpeta en nuestro pc) con muchos archivos, Git nos irá registrando los cambios de archivos o códigos cuando nosotros le indiquemos, así podremos viajar en el tiempo retrocediendo cambios o restaurando versiones de código, ya sea en Local o de forma Remota (servidor externo). En la práctica quedará más claro. </p>",
+    "comandos": []
+  },
+  {
+    "id": "que-es-github",
+    "title": "¿Qué es GitHub?",
+    "subtitle": "",
+    "descripcion": "<p> Es una plataforma de desarrollo colaborativo para alojar proyectos (en la nube) utilizando el sistema de control de versiones Git, Además cuenta con una herramienta muy útil que es GitHub Pages donde podemos publicar nuestros proyectos estáticos (HTML, CSS y JS) gratis. </p>",
+    "comandos": []
+  },
+  {
+    "id": "fundamentos-de-git",
+    "title": "Fundamentos de GIT",
+    "subtitle": "",
+    "descripcion": "<p>En este apartado podrás comenzar a trabajar con git.</p>",
+    "comandos": []
+  },
+  {
+    "id": "comandos-basicos",
+    "title": "Comandos básicos",
+    "subtitle": "",
+    "descripcion": "<p>Aprendamos los primeros comandos con git.</p>",
+    "comandos": [
+      {
+        "subtitle": "Versión de git",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "descripcionComando": "git version"
+      },
+      {
+        "subtitle": "Registrar nuevo usuario asociado a git",
+        "descripcion": "<p class='bg-warning'> <strong>No colocar como nombre de usuario</strong> el correo de su cuenta de Github, podría traer problemas a futuro.</p>",
+        "titleComando": "",
+        "subTitleComando": "",
+        "descripcionComando": "git config --global user.name 'mi nombre'"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "<p>Es recomendable utilizar el correo asociado a Github.</p>",
+        "titleComando": "",
+        "subTitleComando": "",
+        "descripcionComando": "git config --global user.email 'myemail@example.com'"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "descripcionComando": "git config user.name<br/>git config user.email"
+      },
+      {
+        "subtitle": "Ayuda",
+        "descripcion": "",
+        "titleComando": "Ayuda sobre los comandos:",
+        "subTitleComando": "",
+        "descripcionComando": "git help"
+      },
+      {
+        "subtitle": "Mi primer repositorio",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Iniciar un nuevo repositorio<br/> // Crear la carpeta oculta .git<br/> // Solo se ejecuta una vez por proyecto<br/>",
+        "descripcionComando": "git init"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Ver que archivos no han sido registrados",
+        "descripcionComando": "git status -s"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Agregar todos los archivos para que esté pendiente de los cambios",
+        "descripcionComando": "git add ."
+      },
+      {
+        "subtitle": "",
+        "descripcion": "<div class='text-center'> <img src='./src/img/scaner.gif' alt='add archivos git' /> </div>",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Crear commit (fotografía del proyecto en ese momento)",
+        "descripcionComando": "git commit -m 'primer commit'"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Muestra la lista de commit del mas reciente al más antigüo",
+        "descripcionComando": "git log --oneline"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "<p> En resumidas cuentas nosotros realizamos cambios en nuestros archivos, el comando <code>status</code> verificará que archivos han sidos modificados. Cuando deseemos registrar esos cambios tendremos que agregarlos con <code>add .</code> así ya estará listo para poder hacer un commit. El <code>commit</code> realiza la copia de ese instante para poder volver en el tiempo si es que es necesario. </p><div class='card'><div class='card-header bg-warning'><h5>Diferencias entre -- y -</h5></div><div class='card-body'><code>--decorate</code> hace referencia a una palabra<br/><code>-s</code> hace referencia al comando o a varios comandos, -sa serían dos comandos diferente</div></div>",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Vemos información de la rama maestra",
+        "descripcionComando": "git status -s -b<br/>git status -sb //Hace lo mismo que el comando anterior"
+      },
+      {
+        "subtitle": "<strong>Vim</strong> es el editor de código en la línea de comandos",
+        "descripcion": "<div class='card'><div class='card-header bg-warning'><h5>Salir del modo edición 'Vim'</h5></div><div class='card-body'><p>Para salir del modo edición de la líneas de comando precionar :q, en caso de realizar algún cambio sin guardar escribir :qa :q! también sirve para salir sin guardar</p></div></div>",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Vemos información de la rama maestra",
+        "descripcionComando": "git status -s -b<br/>git status -sb //Hace lo mismo que el comando anterior"
+      }
+    ]
+  },
+  {
+    "id": "vscode",
+    "title": "VSCode",
+    "subtitle": "",
+    "descripcion": "<p>Visual Studio Code tiene un apartado de Git, el cual de manera visual podemos trabajar.</p><div class='text-center'> <img src='./src/img/git-vscode.JPG' alt='icono visual studio code git' /> </div>",
+    "comandos": []
+  },
+  {
+    "id": "github",
+    "title": "Github",
+    "subtitle": "",
+    "descripcion": "<ul> <li> <a href='https://github.com/' target='_blank' rel='noopener noreferrer' >github<span ><svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' x='0px' y='0px' viewBox='0 0 100 100' width='15' height='15' class='icon outbound' > <path fill='currentColor' d='M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z' ></path> <polygon fill='currentColor' points='45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9' ></polygon> </svg> <span class='sr-only'>(opens new window)</span></span ></a > </li> </ul>",
+    "comandos": []
+  },
+  {
+    "id": "crear-repositorio",
+    "title": "Crear repositorio",
+    "subtitle": "",
+    "descripcion": "<div class='text-center'> <img src='./src/img/repo-github.JPG' alt='icono visual studio code git' /> </div>",
+    "comandos": [
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "// Vemos información de la rama maestra",
+      "descripcionComando": "git remote add origin https://github.com/bluuweb/tutorial-github.git<br/>git push -u origin master"
+    },
+    {
+      "subtitle": "Al ejecutar estas líneas de comando te pedirá el usuario y contraseña de tu cuenta de github.",
+      "descripcion": "<div class='card'><div class='card-header bg-warning'>En caso de que no pida las credenciales o bien tengas otra cuenta vinculada, puedes reiniciar con:</div><div class='card-body'><ul><li>Panel de control -></li><li>Cuentas de usuario -></li><li>Administrar credenciales -></li><li>Credenciales de Windows -></li><li>Buscar git:https//github.com y quitar</li></ul></div></div>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "// Nos muestra en que repositorio estamos enlazados remotamente.",
+      "descripcionComando": "git remote -v"
+    }
+  ]
+  },
+  {
+    "id": "push",
+    "title": "Push",
+    "subtitle": "",
+    "descripcion": "Para futuros cambios y subir los registros a github ejecutar:",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git add .<br/>git commit -m 'nuevo commit'<br/>git push"
+      }
+    ]
+  },
+  {
+    "id": "clonar-repositorio",
+    "title": "Clonar repositorio",
+    "subtitle": "",
+    "descripcion": "Para descargar un repositorio completo basta con tomar la url ej: <code>https://github.com/bluuweb/tutorial-github.git</code> y ejecutar el siguiente comando en alguna carpeta de su computadora.",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git clone https://github.com/bluuweb/tutorial-github.git nombreCarpeta"
+      }
+    ]
+  },
+  {
+    "id": "gitpages",
+    "title": "Github pages",
+    "subtitle": "",
+    "descripcion": "<div class='text-center'> <img src='./src/img/github-page.JPG' alt='icono visual studio code git' width='500px' /> </div>",
+    "comandos": []
+  }
+]

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .language-js {
+      position: relative;
+      background-color: #282c34;
+      border-radius: 6px;
+      color: white;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >Fundamento y Metodología GIT y GITHUB</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Git Básico
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#queesgit">¿Qué es GIT?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#para-que-usar-git"
+                    >¿Para qué usar GIT?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#flujo-de-trabajo-de-git"
+                    >Flujo de trabajo de GIT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#que-es-github"
+                    >¿Qué es GitHub?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#fundamentos-de-git"
+                    >Fundamentos de GIT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#comandos-basicos"
+                    >Comandos básicos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#vscode">VSCode</a>
+                </li>
+                <li><a class="dropdown-item" href="#github">Github</a></li>
+                <li>
+                  <a class="dropdown-item" href="#crear-repositorio"
+                    >Crear repositorio</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#push">Push</a></li>
+                <li>
+                  <a class="dropdown-item" href="#clonar-repositorio"
+                    >Clonar repositorio</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#gitpages">Github pages</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Git intermedio
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#ignorando-archivos"
+                    >Ignorando Archivos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#introduccion">Introducción</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#git-log-oneline"
+                    >git log --oneline</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#git-checkout">git checkout</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#y-si-hago-un-commit"
+                    >¿y si hago un commit?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#master-a-main"
+                    >Master a Main</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#git-reset">git reset</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#cuidado-con-git-reset"
+                    >Cuidado con Reset</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#git-revert">git revert</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#ramas-o-branch"
+                    >Ramas o branch</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#git-merge">git merge</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#conflictos">Conflictos</a>
+                </li>
+                <li><a class="dropdown-item" href="#tags">Tags</a></li>
+                <li>
+                  <a class="dropdown-item" href="#github-subir-los-tags"
+                    >GITHUB: Subir los tags</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#push-intermedio">Push</a>
+                </li>
+                <li><a class="dropdown-item" href="#pull">Pull</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Metodología</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Ejemplos</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <!-- <button class="btn btn-outline-success" type="submit">
+              Search
+            </button> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="pt-5"></div>
+
+    <div class="container pt-5">
+      <div class="container">
+        <h1>Git Básico</h1>
+        <p>
+          Está guía está diseñada para poder obtener el código del curso de GIT
+          / GITHUB de una forma amigable y en español
+        </p>
+        <div id="gitBasico"></div>
+        <h1>Git Intermedio</h1>
+        <p>Vamos a jugar con otros comandos super útiles de Git.</p>
+        <ul>
+          <li>
+            <a
+              href="https://pixelpioneers.co/blog/2017/git-basics-explained-by-designing-a-new-car"
+              target="_blank"
+            >
+              Explicación simple<span class="sr-only">(opens new window)</span>
+            </a>
+          </li>
+        </ul>
+        <div id="gitIntermedio"></div>
+      </div>
+    </div>
+
+    <!-- Nuevosssssssssss -->
+
+    <div class="container">
+      <div class="text-left">
+        <h6>
+          Referencia:
+          <a
+            href="https://bluuweb.github.io/desarrollo-web-bluuweb/07-01-git/#enlaces"
+            >https://bluuweb.github.io/desarrollo-web-bluuweb/07-01-git/#enlaces
+          </a>
+        </h6>
+      </div>
+    </div>
+
+    <script type="module" src="gitBasico.js"></script>
+    <script type="module" src="gitIntermedio.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

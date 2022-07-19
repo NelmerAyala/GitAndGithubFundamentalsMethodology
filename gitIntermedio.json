@@ -1,0 +1,448 @@
+  [
+    {
+    "id": "ignorando-archivos",
+    "title": "Ignorando Archivos",
+    "subtitle": "",
+    "descripcion": "Para no hacer seguimiento de carpetas o archivos, debemos crear el siguiente archivo:<br/><ul><li>.gitignore</li></ul>",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "Su estructura de ejemplo sería así:",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "arhivo.js &nbsp;&nbsp;&nbsp; // Ignora el archivo en cuestion.<br/>*.js &nbsp;&nbsp;&nbsp; // Ignora todos los arhivos con extensión .js<br/>node_modules/ &nbsp;&nbsp;&nbsp; //Ignora toda la carpeta.<br/>"
+    }]
+  },
+  {
+    "id": "introduccion",
+    "title": "Introducción",
+    "subtitle": "",
+    "descripcion": "<ul> <li> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes' target='_blank' rel='noopener noreferrer'>fuente<span class='sr-only'>(opens new window)</span> </a> </li> <li> Una vez que se ha hecho un commit de los cambios, estos suelen volverse permanentes. </li> <li> Utiliza <code>git checkout</code> para desplazarte y revisar el historial de commits. </li> <li> <code>git revert</code> es la mejor herramienta para deshacer cambios públicos compartidos. </li> <li> <code>git reset</code> es más adecuado para deshacer cambios privados locales. </li> </ul><div class='text-center'> <img src='./src/img/reset.png' alt='git merge' width='500px' /> <br /> <a href='https://medium.com/mindorks/use-of-git-reset-git-revert-git-checkout-squash-commit-2b721ca2d2d3' target='_blank' >Fuente imagen</a > </div>",
+    "comandos": []
+  },
+  {
+    "id": "git-log-oneline",
+    "title": "git log --oneline",
+    "subtitle": "",
+    "descripcion": "<p>Nos muestra el identificador para poder revisar el historial de commit (Cada confirmación tiene un hash SHA-1 de identificación único.).</p>",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git log --oneline"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "a6d151c (HEAD -> master) 02-h2<br/>a00beae 01-html"
+    }
+  ]
+  },
+  {
+    "id": "git-checkout",
+    "title": "git checkout",
+    "subtitle": "",
+    "descripcion": "<p> Si queremos visitar un commit en específico utilizamos: </p>",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git checkout a00beae"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "Durante el curso normal del desarrollo, HEAD apunta por lo general a la rama main u otra rama local <code>(HEAD -> master)</code>, pero, cuando extraes una confirmación anterior, HEAD ya no apunta a una rama, sino que apunta directamente a una confirmación. Este estado recibe el nombre de 'HEAD desasociado' (detached HEAD)",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "a00beae (HEAD) 01-html"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "Comprobar un commit específico pondrá el repositorio en un estado 'HEAD desasociado'. Esto significa que ya no estás trabajando en ninguna rama.",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git checkout master"
+    }
+  ]
+  },
+  {
+    "id": "y-si-hago-un-commit",
+    "title": "¿y si hago un commit?",
+    "subtitle": "",
+    "descripcion": "<p>En el caso de que visitemos un historial de un commit con checkout y comencemos a realizar cambios a partir de ese momento en el tiempo, nuestro nuevo commit quedará huerfano, no tendrá ninguna rama asociada (recuerden que estamos trabajando en master o main). Por lo tanto siguiendo el mismo ejemplo anterior:</p>",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git log --oneline"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "a6d151c (HEAD -> master) 02-h2<br/>a00beae 01-html"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git checkout a00beae"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "Realizamos cambios en el archivo y guardamos un nuevo commit",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git add .<br/>git commit -m '03-huerfano'"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "Ahora si queremos volver a la rama principal (master o main)",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git checkout master"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Tomar nota que efectivamente viajamos al último commit pero git nos recomienda hacer una nueva rama para el commit huerfano.</p><div class='text-center'> <img src='./src/img/checkout-1.JPG' alt='adventencia de rama huerfana' /> </div><p>Todavía no vemos como hacer una rama así que lo dejamos hasta acá por el momento.</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git checkout master"
+    }
+  ]
+  },
+  {
+    "id": "master-a-main",
+    "title": "Master a Main",
+    "subtitle": "",
+    "descripcion": "",
+    "comandos": [
+    {
+      "subtitle": "",
+      "descripcion": "<p>De forma global.</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git config --global init.defaultBranch main"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Para un único proyecto.</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git branch -m master main"
+    }
+    ]
+  },
+  {
+    "id": "git-reset",
+    "title": "git reset",
+    "subtitle": "",
+    "descripcion": "<ul> <li> <a href='https://www.freecodecamp.org/espanol/news/la-guia-definitiva-para-git-reset-y-git-revert/' target='_blank' rel='noopener noreferrer'>fuente<span class='sr-only'>(opens new window)</span></a> </li> <li>Viaje a través de diferentes commit</li> </ul><p>Vamos a conocer como podemos movernos entre los diferentes commit que tengamos registrados, Esto es útil si aún no has subido tu commit a GitHub o a otro repositorio remoto., supongamos que tenemos los siguientes commit:</p>",
+    "comandos": [
+    {
+      "subtitle": "",
+      "descripcion": "<p>De forma global.</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "17d793b (HEAD -> master) tercero.html<br/>c97d996 nosotros.html<br/>3f81f17 primer commmit"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Viajamos al commit en específico c97d996.</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git reset --mixed c97d996"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Podemos notar que no se restauran los archivos pero quedaron sin seguimiento, verás una 'u' en VSCode..<br/>Retrocedamos nuevamente</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git reset 17d793b"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Ahora vamos a utilizar un método destructivo: viajamos al commit en específico c97d996 y eliminamos los cambios futuros</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git reset --hard c97d996"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>En caso de resturar los cambios podemos utilizar reflog: muestra todos los cambios incluso si borramos los commit</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git reflog"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Viajamos al commit en específico 17d793b y podemos restaurar los archivos</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git reset --hard 17d793b"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Para mayor información visite: <a href='https://git-scm.com/book/es/v2/Herramientas-de-Git-Reiniciar-Desmitificado' target='_blank' rel='noopener noreferrer'>Click aquí</a></p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git reset --hard 17d793b"
+    }
+    ]
+  },
+  {
+    "id": "cuidado-con-git-reset",
+    "title": "Cuidado con git reset",
+    "subtitle": "",
+    "descripcion": "<p>Ambos comandos git revert y git reset, deshacen commits anteriores. Pero si ya has subido tu commit a un repositorio remoto, se recomienda que no uses git reset, ya que reescribe el historial de commits. Esto puede hacer que trabajar en un repositorio con otros desarrolladores y mantener un historial consistente de commits sea muy difícil.</div><ul> <li> <a href='https://docs.github.com/es/get-started/using-git/dealing-with-non-fast-forward-errors' target='_blank' rel='noopener noreferrer'>fuente<span class='sr-only'>(opens new window)</span></span></a> </li> </ul>",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "<p>Solución: Restaurar a la última versión remota</p>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git pull origin YOUR_BRANCH_NAME"
+    }]
+  },
+  {
+    "id": "git-revert",
+    "title": "git revert",
+    "subtitle": "",
+    "descripcion": "<p>En su lugar es mejor usar git revert, deshace los cambios realizados por un commit anterior creando un commit completamente nuevo, todo esto sin alterar el historial de commits.<div class='text-center'> <img src='./src/img/revert.svg' alt='revert vs reset' /> <br /> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes/git-revert' target='_blank' >Fuente imagen</a > </div></p>",
+    "comandos": [{
+      "subtitle": "",
+      "descripcion": "Ejemplo:",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "17d793b (HEAD -> main) tercero.html<br/>c97d996 nosotros.html<br/>3f81f17 primer commmit"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": "git revert 3f81f17"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "<p>Ventajas</p> <ul> <li> Revertir presenta dos ventajas importantes con respecto a restablecer. En primer lugar, no cambia el historial del proyecto, lo que la convierte en una operación 'segura' para las confirmaciones que ya se han publicado en un repositorio compartido. </li> <li> En segundo lugar, el comando git revert puede dirigirse a una sola confirmación en un punto arbitrario del historial, mientras que git reset solo puede volver hacia atrás desde la confirmación actual. Por ejemplo, si quisieras deshacer una confirmación anterior mediante git reset, tendrías que eliminar todas las confirmaciones que se hubieran producido después de la confirmación a la que va destinada la acción, eliminarla y, acto seguido, volver a confirmar todas las confirmaciones posteriores. </li> <li> <a href='https://www.atlassian.com/es/git/tutorials/undoing-changes/git-revert' target='_blank' rel='noopener noreferrer' >fuente<span class='sr-only'>(opens new window)</span></a> </li> </ul>",
+      "titleComando": "",
+      "subTitleComando": "",
+      "descripcionComando": ""
+    }
+  ]
+  },
+  {
+    "id": "ramas-o-branch",
+    "title": "Ramas o branch",
+    "subtitle": "",
+    "descripcion": "<p>Hasta el momento solo hemos trabajado en la rama 'master' o 'main' pero puede que necesitemos crear diferentes ramas para los seguimientos de git.</p><div class='text-center'> <img src='./src/img/feature.png' alt='git merge' width='500px' /> <br /> <a href='https://zepel.io/blog/how-to-create-a-new-branch-in-github/' target='_blank' >Fuente imagen</a > </div>",
+    "comandos": [
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "// Crea una nueva rama",
+      "descripcionComando": "git branch nombreRama"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "// Nos muestra en que rama estamos",
+      "descripcionComando": "git branch"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "// Nos movemos a la nueva rama",
+      "descripcionComando": "git checkout nombreRama"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "// Nos muestra visualmente las ramas",
+      "descripcionComando": "git log --oneline --graph"
+    },
+    {
+      "subtitle": "",
+      "descripcion": "",
+      "titleComando": "",
+      "subTitleComando": "",
+      "subParrafoComando": "",
+      "descripcionComando": "git push --set-upstream origin nombreRama"
+    }
+  ]
+  },
+  {
+    "id": "git-merge",
+    "title": "git merge",
+    "subtitle": "",
+    "descripcion": "Podemos unir una rama con la nueva, para eso tenemos que estar en la rama para ejecutar el siguiente comando:",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "Tenemos que estar en la rama que está esperando los cambios (los nuevos cambios):",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git merge nombreRama"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git log --oneline --graph"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "<div class='text-center'> <img src='./src/img/git-merge.gif' alt='git merge' width='500px' /> </div>",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git log --oneline --graph"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Eliminar una rama",
+        "descripcionComando": "git branch -d nombreRama"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "<strong>Atajos</strong><br/>Podemos utilizar para crear la nuevaRama y viajar a ella:",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git checkout -b nuevaRama"
+      }
+    ]
+  },
+  {
+    "id": "conflictos",
+    "title": "Conflictos",
+    "subtitle": "",
+    "descripcion": "<div class='text-center'> <img src='./src/img/conflicto-2.JPG' alt='conflicto en ramas unidas' /> </div> <p> Puedes utilizar las herramientas de VSCode o bien hacer los cambios manualmente en el archivo. <strong>Lo importante es hacer un nuevo commit al finalizar.</strong> </p>",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git add .<br/>git commit -m 'solucion de conflicto'"
+      }
+    ]
+  },
+  {
+    "id": "tags",
+    "title": "Tags",
+    "subtitle": "",
+    "descripcion": "Con los tags podemos hacer versiones de nuestro proyecto.",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Crear un tags",
+        "descripcionComando": "git tag versionAlpha -m 'versión alpha'"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Listar tags",
+        "descripcionComando": "git tag"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Borrar tags",
+        "descripcionComando": "git tag -d nombreTags"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Hacer una versión en un commit anterior ej: f52f3da",
+        "descripcionComando": "git tag -a nombreTag f52f3da -m 'version alpha'"
+      },
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "// Mostrar información del tag",
+        "descripcionComando": "git show nombreTag"
+      }
+    ]
+  },
+  {
+    "id": "github-subir-los-tags",
+    "title": "GITHUB: Subir los tags",
+    "subtitle": "",
+    "descripcion": "Por defecto si creaste un proyecto con diferentes versiones no subirá los tags, para eso tenemos el siguiente comando.",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git push --tags"
+      }
+    ]
+  },
+  {
+    "id": "push-intermedio",
+    "title": "Push",
+    "subtitle": "",
+    "descripcion": "Al ejecutar el comando <code>git push</code> estaremos subiendo todos los cambios locales al servidor remoto de github, ten en cuenta que tienes que estar enlazado con tu repositorio, para eso puedes utilizar <code>git remote -v</code> luego ejecuta:",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git push"
+      }
+    ]
+  },
+  {
+    "id": "pull",
+    "title": "Pull",
+    "subtitle": "",
+    "descripcion": "Cuando realizamos cambios directamente en github pero no de forma local, es esencial realizar un pull, donde descargaremos los cambios realizados para seguir trabajando normalmente. Es importante estar enlazados remotamente, puedes verificar con: <code>git remote -v</code>, luego ejecuta:",
+    "comandos": [
+      {
+        "subtitle": "",
+        "descripcion": "",
+        "titleComando": "",
+        "subTitleComando": "",
+        "subParrafoComando": "",
+        "descripcionComando": "git pull"
+      }
+    ]
+  }
+]
