@@ -143,7 +143,7 @@
     "id": "vscode",
     "title": "VSCode",
     "subtitle": "",
-    "descripcion": "<p>Visual Studio Code tiene un apartado de Git, el cual de manera visual podemos trabajar.</p><div class='text-center'> <img src='./src/img/git-vscode.JPG' alt='icono visual studio code git' /> </div>",
+    "descripcion": "<p>Visual Studio Code tiene un apartado de Git, el cual de manera visual podemos trabajar.</p><div class='text-center'> <img src='./src/img/git-vscode.jpg' alt='icono visual studio code git' /> </div>",
     "comandos": []
   },
   {
@@ -157,7 +157,7 @@
     "id": "crear-repositorio",
     "title": "Crear repositorio",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <img src='./src/img/repo-github.JPG' alt='icono visual studio code git' /> </div>",
+    "descripcion": "<div class='text-center'> <img src='./src/img/repo-github.jpg' alt='icono visual studio code git' /> </div>",
     "comandos": [
     {
       "subtitle": "",
@@ -213,7 +213,7 @@
     "id": "gitpages",
     "title": "Github pages",
     "subtitle": "",
-    "descripcion": "<div class='text-center'> <img src='./src/img/github-page.JPG' alt='icono visual studio code git' width='500px' /> </div>",
+    "descripcion": "<div class='text-center'> <img src='./src/img/github-page.jpg' alt='icono visual studio code git' width='500px' /> </div>",
     "comandos": []
   }
 ]
